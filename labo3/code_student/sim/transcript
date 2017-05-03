@@ -1,0 +1,373 @@
+# //  Questa Sim
+# //  Version 10.2_1 linux Feb 16 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): (vcom-1136) Unknown identifier "a".
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): (vcom-1136) Unknown identifier "b".
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): (vcom-1312) Unknown record element "a_greather_than_b" for selected name prefix "datapath_to_control_o" of record type "work.math_computer_pkg.datapath_to_control_t".
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): (vcom-1312) Unknown record element "a_greather_than_b" for selected name prefix "datapath_to_control_o" of record type "work.math_computer_pkg.datapath_to_control_t".
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Target type ieee.std_logic_1164.STD_ULOGIC in signal assignment is different from expression type std.STANDARD.BOOLEAN.
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Target type ieee.std_logic_1164.STD_ULOGIC in signal assignment is different from expression type std.STANDARD.BOOLEAN.
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Illegal type conversion from std.STANDARD.BOOLEAN to ieee.std_logic_1164.STD_LOGIC (not closely related).
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Target type ieee.std_logic_1164.STD_ULOGIC in signal assignment is different from expression type std.STANDARD.BOOLEAN.
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Target type ieee.std_logic_1164.STD_ULOGIC in signal assignment is different from expression type ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Illegal type conversion from std.STANDARD.BOOLEAN to ieee.std_logic_1164.STD_LOGIC_VECTOR (non-numeric to array).
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(47): Illegal type conversion from std.STANDARD.BOOLEAN to ieee.std_logic_1164.STD_LOGIC (not closely related).
+# ** Error: ../src_vhdl/math_computer_datapath.vhd(111): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_VHDL/math_computer_datapath.vhd"
+#     (procedure "vhdl_compil" line 8)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
