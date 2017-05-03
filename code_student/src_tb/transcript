@@ -1,0 +1,154 @@
+# //  Questa Sim
+# //  Version 10.2_1 linux Feb 16 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer
+# -- Compiling architecture struct of math_computer
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Compiling package RNG
+# -- Compiling package body RNG
+# -- Loading package RNG
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_verif_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: ../src_tb/math_computer_tb.vhd(26): Library tlmvm not found.
+# ** Error: ../src_tb/math_computer_tb.vhd(27): (vcom-1474) Selected name prefix "tlmvm" in context reference is not a library name.
+# -- Loading package RNG
+# -- Loading package math_computer_pkg
+# -- Loading package math_computer_verif_pkg
+# ** Error: ../src_tb/math_computer_tb.vhd(37): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_TB/math_computer_tb.vhd"
+#     (procedure "vhdl_compil" line 12)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
+do ../scripts/sim.do
+# ../src_vhdl
+# ../src_tb
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_control
+# -- Compiling architecture behave of math_computer_control
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer_datapath
+# -- Compiling architecture behave of math_computer_datapath
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package math_computer_pkg
+# -- Compiling entity math_computer
+# -- Compiling architecture struct of math_computer
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Compiling package RNG
+# -- Compiling package body RNG
+# -- Loading package RNG
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package math_computer_verif_pkg
+# QuestaSim vcom 10.2_1 Compiler 2013.02 Feb 16 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: ../src_tb/math_computer_tb.vhd(26): Library tlmvm not found.
+# ** Error: ../src_tb/math_computer_tb.vhd(27): (vcom-1474) Selected name prefix "tlmvm" in context reference is not a library name.
+# -- Loading package RNG
+# -- Loading package math_computer_pkg
+# -- Loading package math_computer_verif_pkg
+# ** Error: ../src_tb/math_computer_tb.vhd(37): VHDL Compiler exiting
+# ** Error: /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+# Error in macro ./../scripts/sim.do line 76
+# /opt/EDA/mentor/questasim/10.2/questasim/linux/vcom failed.
+#     while executing
+# "vcom -2008 $Path_TB/math_computer_tb.vhd"
+#     (procedure "vhdl_compil" line 12)
+#     invoked from within
+# "vhdl_compil"
+#     (procedure "do_all" line 2)
+#     invoked from within
+# "do_all"
+#     invoked from within
+# "if {$argc==1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif {[st..."
