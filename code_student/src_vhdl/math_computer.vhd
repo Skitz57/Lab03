@@ -19,79 +19,59 @@ end math_computer;
 
 architecture struct of math_computer is
 
+		signal result_s : std_logic_vector(DATASIZE-1 downto 0);
+		signal a_s : std_logic_vector(DATASIZE-1 downto 0);
+		signal b_s : std_logic_vector(DATASIZE-1 downto 0);
+		signal c_s : std_logic_vector(DATASIZE-1 downto 0);
 
-    component math_computer_control is
-    	port (
-    		clk_i    : in    std_logic;
-    		rst_i    : in    std_logic;
-            control_to_datapath_o : out control_to_datapath_t;
-            datapath_to_control_i : in datapath_to_control_t;
-    		start_i : in std_logic;
-    		ready_i : in std_logic;
-            valid_o : out std_logic;
-            ready_o : out std_logic
-    	);
-    end component;
-
-
-    component math_computer_datapath is
-    	generic (
-    		DATASIZE   : integer := 8
-    	);
-    	port (
-    		clk_i    : in    std_logic;
-    		rst_i    : in    std_logic;
-            control_to_datapath_i : in control_to_datapath_t;
-            datapath_to_control_o : out datapath_to_control_t;
-            a_i : in   std_logic_vector(DATASIZE-1 downto 0);
-            b_i : in   std_logic_vector(DATASIZE-1 downto 0);
-            c_i : in   std_logic_vector(DATASIZE-1 downto 0);
-            result_o : out   std_logic_vector(DATASIZE-1 downto 0)
-    	);
-    end component;
-
-    signal control_to_datapath_s : control_to_datapath_t;
-    signal datapath_to_control_s : datapath_to_control_t;
-
-    signal a_s : std_logic_vector(DATASIZE-1 downto 0);
-    signal b_s : std_logic_vector(DATASIZE-1 downto 0);
-    signal c_s : std_logic_vector(DATASIZE-1 downto 0);
-    signal result_s : std_logic_vector(DATASIZE-1 downto 0);
+		signal general_enable : std_logic;
+    signal add_1 : std_logic_vector(DATASIZE-1 downto 0);
+		signal add_1_fut : std_logic_vector(DATASIZE-1 downto 0);
+		signal add_2 : std_logic_vector(DATASIZE-1 downto 0);
+		signal add_2_fut : std_logic_vector(DATASIZE-1 downto 0);
+		signal sub_1 : std_logic_vector(DATASIZE-1 downto 0);
+		signal sub_1_fut : std_logic_vector(DATASIZE-1 downto 0);
+		signal valid_fut : std_logic_vector(DATASIZE-1 downto 0);
+		signal valid_fut_fut : std_logic;
 
 begin
 
-    a_s <= input_itf_in_i.a;
-    b_s <= input_itf_in_i.b;
-    c_s <= input_itf_in_i.c;
-    output_itf_out_o.result <= result_s;
+	-- variables assignments
+	a_s <= input_itf_in_i.a;
+	b_s <= input_itf_in_i.b;
+	c_s <= input_itf_in_i.c;
+	output_itf_out_o.result <= result_s;
 
-    assert input_itf_in_i.a'length = DATASIZE report "SIZE" severity error;
-    assert input_itf_in_i.b'length = DATASIZE report "SIZE" severity error;
-    assert input_itf_in_i.c'length = DATASIZE report "SIZE" severity error;
-    assert output_itf_out_o.result'length = DATASIZE report "SIZE" severity error;
+	-- process synchrone
+	synch : process (clk_i)
+	begin
+		if rising_edge(clk_i) then
+			-- Reset
+			if (rst_i = '1') then
+				-- enable
+				if (general_enable = '1') then
+					add_2 = add_2_fut;
+					add_1 = add_1_fut;
+					sub_1 = sub_1_fut;
+					valid_fut = start_i;
+					valid_o = valid_fut;
+				end if
+			end if;
+		end if;
+	end process;
 
-    control : math_computer_control
-    port map(
-        clk_i => clk_i,
-        rst_i => rst_i,
-        control_to_datapath_o => control_to_datapath_s,
-        datapath_to_control_i => datapath_to_control_s,
-        start_i => input_itf_in_i.valid,
-        ready_i => output_itf_in_i.ready,
-        valid_o => output_itf_out_o.valid,
-        ready_o => input_itf_out_o.ready
-    );
+		comb : process (valid_o, ready_i,valid_i,ready_o)
+		begin
 
-    datapath : math_computer_datapath
-    generic map(DATASIZE => DATASIZE)
-    port map(
-        clk_i => clk_i,
-        rst_i => rst_i,
-        control_to_datapath_i => control_to_datapath_s,
-        datapath_to_control_o => datapath_to_control_s,
-        a_i => a_s,--input_itf_in_i.a,
-        b_i => b_s, --input_itf_in_i.b,
-        c_i => c_s, --input_itf_in_i.c,
-        result_o => result_s --output_itf_out_o.result
-    );
+			if(valid_o and (not ready_i) then
+				general_enable <= '0';
+			else
+				general_enable <= '1';
+			end if;
+			if (valid_i and ready_o) then
+				add_1_fut <= std_logic_vector(unsigned(a_s) + unsigned(a_s));
+				sub_1_fut <= std_logic_vector(unsigned(b_s) - unsigned(c_s));
+				add_2_fut <= std_logic_vector(unsigned(add_1_fut) + unsigned(sub_1_fut));
+			end if;
+		end process;
 end struct;
