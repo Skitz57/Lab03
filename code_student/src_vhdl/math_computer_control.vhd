@@ -29,7 +29,6 @@ begin
 	begin
 		ready_o <= '0';
 		valid_o <= '0';
-		test
 
 		control_to_datapath_o.sel0 <= "000";
 		control_to_datapath_o.sel1 <= "000";
